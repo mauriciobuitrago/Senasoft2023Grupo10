@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="2" failures="0" name="login" skipped="0" tests="2" time="0.81" timestamp="2023-09-28 11:18:18"><testcase name="Successful login"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+models.actor.SetUp(actor.java:21)&#13;
+Stepdefinitions.registerstepdefinition.theUserEntersThePage(registerstepdefinition.java:18)&#13;
+✽.The user enters the page(file:///C:/Users/Aprendiz/Desktop/pruebaautomatizacion/Senasoft2023Grupo10/Automatizacion/src/test/resources/Features/login.feature:3)&#13;
+</system-err></testcase><testcase name="Unsuccessful login"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+models.actor.SetUp(actor.java:21)&#13;
+Stepdefinitions.registerstepdefinition.theUserEntersThePage(registerstepdefinition.java:18)&#13;
+✽.The user enters the page(file:///C:/Users/Aprendiz/Desktop/pruebaautomatizacion/Senasoft2023Grupo10/Automatizacion/src/test/resources/Features/login.feature:11)&#13;
+</system-err></testcase></testsuite>
