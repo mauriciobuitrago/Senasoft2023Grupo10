@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         glue ="Stepdefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE,
 
-        tags=""
+        tags="@1"
 
 
 )
