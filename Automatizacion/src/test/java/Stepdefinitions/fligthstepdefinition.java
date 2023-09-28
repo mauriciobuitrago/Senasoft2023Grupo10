@@ -9,24 +9,22 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import org.hamcrest.Matchers;
 import questions.validationflight;
 import questions.validationflightfaile;
-import questions.validationlogin;
 import tasks.flight;
 import tasks.flightfaile;
 
 public class fligthstepdefinition {
-actor actor=new actor();
 
-    @Given("the user enteres the page")
-    public void theUserEnteresThePage() {
-        actor.SetUp();
-    }
+    models.actor actor = new actor();
+
+
 
 
     @When("the user enters departure from {string} arrival in {string} and specifies the date")
-    public void theUserCompletesAllFieldsCorrectly(String salidad,String llegada ) {
+    public void theUserCompletesAllFieldsCorrectly(String salidad, String llegada) {
         OnStage.theActorInTheSpotlight().attemptsTo(flight.flig(salidad, llegada));
 
     }
+
     @Then("It validates that a successful search was made")
     public void itValidatesThatASuccessfulSearchWasMade() {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(validationflight.compara(), Matchers.is(true)));
@@ -34,13 +32,13 @@ actor actor=new actor();
     }
 
     @When("the user enters departure from {string} arrival in {string}, one children sin edad and specifies the dat")
-    public void theUsernotCompletesAllFieldsinCorrectly(String salidad,String llegada ) {
+    public void theUsernotCompletesAllFieldsinCorrectly(String salidad, String llegada) {
         OnStage.theActorInTheSpotlight().attemptsTo(flightfaile.flig(salidad, llegada));
 
     }
 
     @Then("Validates that an erroneous search was performed")
-    public void  Validatesthatanerroneoussearchwasperformed() {
+    public void Validatesthatanerroneoussearchwasperformed() {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(validationflightfaile.compara(), Matchers.is(true)));
 
     }

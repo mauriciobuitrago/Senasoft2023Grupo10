@@ -12,13 +12,16 @@ public class actor {
     @Managed
     WebDriver driver;
 
-    public  void  SetUp(){
+    @Before
+    public void SetUp() {
         OnStage.setTheStage(Cast.ofStandardActors());
         OnStage.theActorCalled("edwin");
         OnStage.theActorInTheSpotlight().can(BrowseTheWeb.with(driver));
         OnStage.theActorInTheSpotlight().wasAbleTo(Open.url("https://www.booking.com/"));
-    }
 
+
+
+    }
 
 
 }

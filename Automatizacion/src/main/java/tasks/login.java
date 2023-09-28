@@ -4,15 +4,11 @@ import interations.anuncio;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
-import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actors.OnStage;
-import net.serenitybdd.screenplay.waits.WaitUntil;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 
-import static userinterfaces.registerorloginpage.*;
+import static userinterfaces.register_or_loginpage.*;
 import static userinterfaces.topbarcomponent.Btn_login;
 
 public class login implements Task {
@@ -38,7 +34,7 @@ public class login implements Task {
                 Enter.keyValues(email).into(Txt_email),
                 Click.on(Btn_following),
                 Enter.keyValues(password).into(Txt_password),
-                Click.on(Txt_password),
+
 
                 Click.on(Btn_login1)
 

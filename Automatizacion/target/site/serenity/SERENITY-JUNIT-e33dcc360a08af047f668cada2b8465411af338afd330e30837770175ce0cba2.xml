@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="vuelos" skipped="0" tests="1" time="34.34" timestamp="2023-09-27 07:39:17"><testcase name="Find correct flights"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="vuelos" skipped="0" tests="2" time="59.68" timestamp="2023-09-28 07:17:04"><testcase name="Find correct flights"/><testcase name="Find faile flights"><error message="element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;css-1ovag24&quot; aria-haspopup=&quot;true&quot; tabindex=&quot;0&quot; data-ui-name=&quot;input_location_from_segment_0&quot; data-ui-error=&quot;false&quot; aria-expanded=&quot;false&quot;&gt;...&lt;/button&gt; is not clickable at point (269, 296). Other element would receive the click: &lt;div class=&quot;css-6yc6o0&quot;&gt;...&lt;/div&gt;&#10;  (Session info: MicrosoftEdge=117.0.2045.43)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'CALDFPCTIGOP', ip: '172.18.8.29', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_382'&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 117.0.2045.43, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63434}, msedge: {msedgedriverVersion: 117.0.2045.43 (fe8879882c1b..., userDataDir: C:\Users\Aprendiz\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c19d2fa0ff2502021cdc79c33805a88c" type="org.openqa.selenium.ElementClickInterceptedException">element click intercepted: Element &lt;button type="button" class="css-1ovag24" aria-haspopup="true" tabindex="0" data-ui-name="input_location_from_segment_0" data-ui-error="false" aria-expanded="false"&gt;...&lt;/button&gt; is not clickable at point (269, 296). Other element would receive the click: &lt;div class="css-6yc6o0"&gt;...&lt;/div&gt;
+  (Session info: MicrosoftEdge=117.0.2045.43)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CALDFPCTIGOP', ip: '172.18.8.29', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_382'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 117.0.2045.43, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63434}, msedge: {msedgedriverVersion: 117.0.2045.43 (fe8879882c1b..., userDataDir: C:\Users\Aprendiz\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c19d2fa0ff2502021cdc79c33805a88c</error><system-err>element click intercepted: Element &lt;button type="button" class="css-1ovag24" aria-haspopup="true" tabindex="0" data-ui-name="input_location_from_segment_0" data-ui-error="false" aria-expanded="false"&gt;...&lt;/button&gt; is not clickable at point (269, 296). Other element would receive the click: &lt;div class="css-6yc6o0"&gt;...&lt;/div&gt;
+  (Session info: MicrosoftEdge=117.0.2045.43)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CALDFPCTIGOP', ip: '172.18.8.29', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_382'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 117.0.2045.43, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63434}, msedge: {msedgedriverVersion: 117.0.2045.43 (fe8879882c1b..., userDataDir: C:\Users\Aprendiz\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c19d2fa0ff2502021cdc79c33805a88c&#13;
+tasks.flightfaile.performAs(flightfaile.java:25)&#13;
+Stepdefinitions.fligthstepdefinition.theUsernotCompletesAllFieldsinCorrectly(fligthstepdefinition.java:38)&#13;
+io.cucumber.java.Invoker.doInvoke(Invoker.java:66)&#13;
+io.cucumber.java.Invoker.invoke(Invoker.java:24)&#13;
+io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)&#13;
+io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)&#13;
+io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)&#13;
+io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)&#13;
+io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)&#13;
+io.cucumber.core.runner.TestStep.run(TestStep.java:64)&#13;
+io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)&#13;
+io.cucumber.core.runner.TestCase.run(TestCase.java:104)&#13;
+io.cucumber.core.runner.Runner.runPickle(Runner.java:73)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:258)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)&#13;
+</system-err></testcase></testsuite>

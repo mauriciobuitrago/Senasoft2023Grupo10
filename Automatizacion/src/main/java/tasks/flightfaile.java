@@ -26,8 +26,10 @@ public class flightfaile implements Task {
                 anuncio.quit(),
                 Click.on(Btn_flight),
                 Click.on(Rtn_single_trip),
-                Click.on(Btn_pasajeros),
-                Click.on(Btn_pasajeros_ninos),
+                Click.on(Btn_passengers),
+                Click.on(Btn_passengers_children),
+                Click.on(Btn_passengers),
+
                 Click.on(Btn_exitflight),
                 Enter.keyValues(lugar_salidad).into(Txt_exitflight),
                 Click.on(Btn_select_airport_exit),

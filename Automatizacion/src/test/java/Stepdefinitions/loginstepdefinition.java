@@ -1,31 +1,19 @@
 package Stepdefinitions;
 
-import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import models.actor;
 import net.serenitybdd.screenplay.GivenWhenThen;
-import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
-import net.serenitybdd.screenplay.actions.Open;
-import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
-import net.thucydides.core.annotations.Managed;
 import org.hamcrest.Matchers;
-import org.openqa.selenium.WebDriver;
 import questions.validationlogin;
 import tasks.login;
 
 public class loginstepdefinition {
-actor actor=new actor();
-
-    @Given("The user enters the page")
-    public void theUserEntersThePage() {
-        actor.SetUp();
+    actor actor = new actor();
 
 
-
-    }
 
     @When("the user enters to login with {string} email and password {string}")
     public void theUserEntersTologin(String email, String password) {
