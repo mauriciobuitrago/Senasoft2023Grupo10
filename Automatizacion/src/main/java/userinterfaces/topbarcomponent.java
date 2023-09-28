@@ -10,4 +10,5 @@ public class topbarcomponent {
     public static  final Target validarlogin = Target.the("vaidar usuario").located(By.cssSelector("#root > div > div > div > div.app > div.access-container.bui_font_body > div > div > div > div > div > div > form > div.bui-spacer--large.bui-u-margin-top--24 > div.bui-spacer--largest"));
     public static  final Target Btn_flight = Target.the("ingresar a vuelos").located(By.cssSelector("#flights"));
     public static  final Target Btn_rental_car = Target.the("ingresar a rentar carro").located(By.cssSelector("#cars > div"));
+    public static  final Target validarStays = Target.the("vaidar busacar alojamiento ").locatedBy("#bodyconstraint-inner > div:nth-child(10) > div > div.af5895d4b2 > div.df7e6ba27d > div.b4b4b2787f > div.ffb9c3d6a3.c9c3c66a7d.f7d4209a37 > div.f2cf178bcd.eb7954a872 > h2");
 }
