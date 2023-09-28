@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="login" skipped="0" tests="1" time="22.02" timestamp="2023-09-27 12:52:02"><testcase name="Successful login"><error message="java.lang.reflect.InvocationTargetException&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'CALDFPCTIGOP', ip: '172.18.8.29', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_382'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.json.JsonException">java.lang.reflect.InvocationTargetException
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="login" skipped="0" tests="2" time="33.87" timestamp="2023-09-27 05:16:26"><testcase name="Successful login"><failure message="Expected condition failed: waiting for By.xpath: //*[@id=&quot;b2indexPage&quot;]/div[2]/div/header/nav[1]/div[2]/div/a to be present (tried for 5 second(s) with 100 milliseconds interval)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'CALDFPCTIGOP', ip: '172.18.1.208', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_382'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException">Expected condition failed: waiting for By.xpath: //*[@id="b2indexPage"]/div[2]/div/header/nav[1]/div[2]/div/a to be present (tried for 5 second(s) with 100 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CALDFPCTIGOP', ip: '172.18.8.29', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_382'
-Driver info: driver.version: RemoteWebDriver</error><system-err>java.lang.reflect.InvocationTargetException
+System info: host: 'CALDFPCTIGOP', ip: '172.18.1.208', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_382'
+Driver info: driver.version: unknown</failure><system-err>Expected condition failed: waiting for By.xpath: //*[@id="b2indexPage"]/div[2]/div/header/nav[1]/div[2]/div/a to be present (tried for 5 second(s) with 100 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CALDFPCTIGOP', ip: '172.18.8.29', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_382'
-Driver info: driver.version: RemoteWebDriver&#13;
-com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:66)&#13;
-tasks.login.performAs(login.java:53)&#13;
-Stepdefinitions.registerstepdefinition.theUserEntersTologin(registerstepdefinition.java:42)&#13;
+System info: host: 'CALDFPCTIGOP', ip: '172.18.1.208', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_382'
+Driver info: driver.version: unknown&#13;
+tasks.login.performAs(login.java:33)&#13;
+Stepdefinitions.loginstepdefinition.theUserEntersTologin(loginstepdefinition.java:32)&#13;
 io.cucumber.java.Invoker.doInvoke(Invoker.java:66)&#13;
 io.cucumber.java.Invoker.invoke(Invoker.java:24)&#13;
 io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)&#13;
@@ -25,4 +24,4 @@ io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:25
 io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)&#13;
 worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)&#13;
 worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)&#13;
-</system-err></testcase></testsuite>
+</system-err></testcase><testcase name="Unsuccessful login"/></testsuite>

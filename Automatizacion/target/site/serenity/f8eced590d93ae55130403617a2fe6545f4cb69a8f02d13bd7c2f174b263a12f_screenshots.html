@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 27-09-2023 12:52</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 27-09-2023 17:16</span>
     <br style="clear:left"/>
 </div>
 
@@ -189,9 +189,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="error-color">Successful login
+                                <span class="failing-color">Successful login
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -214,7 +214,7 @@
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Json exception: java.lang.reflect.InvocationTargetException</span>
+                    <span class="error-message error-message-title">Element should be present exception: Expected condition failed: waiting for By.xpath: //*[@id='b2indexPage']/div[2]/div/headerav[1]/div[2]/div/a to be present (tried for 5 second(s) with 100 milliseconds interval)Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'System info: host: 'CALDFPCTIGOP', ip: '172.18.1.208', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_382'Driver info: driver.version: unknown</span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
@@ -230,18 +230,19 @@
         <div class="collapse multi-collapse" id="stacktraceModal-overall">
             <div class="card">
                 <div class="card-header">
-                    <h4>org.openqa.selenium.json.JsonException </h4>
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException </h4>
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:66)<br />tasks.login.performAs(login.java:53)<br />Stepdefinitions.registerstepdefinition.theUserEntersTologin(registerstepdefinition.java:42)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:64)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:104)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:73)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:258)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                        <pre>tasks.login.performAs(login.java:33)<br />Stepdefinitions.loginstepdefinition.theUserEntersTologin(loginstepdefinition.java:32)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:64)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:104)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:73)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:258)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
                     </div>
 
                     <h4>
-                        Caused by: java.lang.reflect.InvocationTargetException
+                        Caused by: org.openqa.selenium.TimeoutException
                     </h4>
                     <div>
-                        <pre>com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java :66)<br />tasks.login.performAs(login.java :53)<br />Stepdefinitions.registerstepdefinition.theUserEntersTologin(registerstepdefinition.java :42)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java :66)<br />io.cucumber.java.Invoker.invoke(Invoker.java :24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java :47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java :29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java :66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java :63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java :92)<br />io.cucumber.core.runner.TestStep.run(TestStep.java :64)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java :51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java :104)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java :73)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :135)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :27)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :258)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :57)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java :69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java :74)<br /></pre>
+                            <pre>Expected condition failed: waiting for By.xpath: //*[@id=&quot;b2indexPage&quot;]/div[2]/div/header/nav[1]/div[2]/div/a to be present (tried for 5 second(s) with 100 milliseconds interval)<br>Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'<br>System info: host: 'CALDFPCTIGOP', ip: '172.18.1.208', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_382'<br>Driver info: driver.version: unknown</pre>
+                        <pre>tasks.login.performAs(login.java :33)<br />Stepdefinitions.loginstepdefinition.theUserEntersTologin(loginstepdefinition.java :32)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java :66)<br />io.cucumber.java.Invoker.invoke(Invoker.java :24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java :47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java :29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java :66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java :63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java :92)<br />io.cucumber.core.runner.TestStep.run(TestStep.java :64)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java :51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java :104)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java :73)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :135)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :27)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :258)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :57)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java :69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java :74)<br /></pre>
                     </div>
                 </div>
             </div>
@@ -250,32 +251,21 @@
 
 
                 <div class="panel-body">
-                    <a href="pagesource3351057820688175286.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="pagesource3044541432326847443.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="12229b45cb207c041709833cfd7cf3602b573ee1522012485cbabe5adb7dc875.png" title=" Given The user enters the page" width="1318"/>
-                <img src="12229b45cb207c041709833cfd7cf3602b573ee1522012485cbabe5adb7dc875.png" title=" edwin opens the https://www.booking.com/" width="1318"/>
-                <img src="12229b45cb207c041709833cfd7cf3602b573ee1522012485cbabe5adb7dc875.png" title=" Given The user enters the page (completed)" width="1318"/>
-                <img src="12229b45cb207c041709833cfd7cf3602b573ee1522012485cbabe5adb7dc875.png" title=" When the user enters to login with &quot;1automation@gmail.com&quot; email and password &quot;Automatizacion123&quot;" width="1318"/>
-                <img src="f7da3ed133d3f1304f70206ab37d72c1822a61df42c9921e03ffab4302481bd4.png" title=" Edwin login" width="1318"/>
-                <img src="f7da3ed133d3f1304f70206ab37d72c1822a61df42c9921e03ffab4302481bd4.png" title=" Edwin anuncio" width="1318"/>
-                <img src="f7da3ed133d3f1304f70206ab37d72c1822a61df42c9921e03ffab4302481bd4.png" title=" edwin clicks on ilimina ununcio" width="1318"/>
-                <img src="f7da3ed133d3f1304f70206ab37d72c1822a61df42c9921e03ffab4302481bd4.png" title=" Edwin anuncio (completed)" width="1318"/>
-                <img src="f7da3ed133d3f1304f70206ab37d72c1822a61df42c9921e03ffab4302481bd4.png" title=" edwin clicks on dar click en el boton de logiarse" width="1318"/>
-                <img src="54b04ec8af990411b56273824220b8bc1ced606021284f95368aa891990e9df7.png" title=" edwin clicks on dar click en el boton de logiarse (completed)" width="1318"/>
-                <img src="54b04ec8af990411b56273824220b8bc1ced606021284f95368aa891990e9df7.png" title=" edwin enters '1automation@gmail.com' into ingresa email" width="1318"/>
-                <img src="48bb35c667fd09c63029adfd52faf5a5184077f3a3bb62f2ebe3a4804c53c28d.png" title=" edwin enters '1automation@gmail.com' into ingresa email (completed)" width="1318"/>
-                <img src="48bb35c667fd09c63029adfd52faf5a5184077f3a3bb62f2ebe3a4804c53c28d.png" title=" edwin clicks on oprime siguiente" width="1318"/>
-                <img src="5e64370da53da8211a5145ec262a586c3a17055e6d5d04fc9a631a7988a1cd26.png" title=" edwin clicks on oprime siguiente (completed)" width="1318"/>
-                <img src="5e64370da53da8211a5145ec262a586c3a17055e6d5d04fc9a631a7988a1cd26.png" title=" edwin enters 'Automatizacion123' into ingrese contrase&Atilde;&plusmn;a" width="1318"/>
-                <img src="855da95d16199cd37e980b9c30913d48bef264fd74e3f28aea45cf6dfde55362.png" title=" edwin enters 'Automatizacion123' into ingrese contrase&Atilde;&plusmn;a (completed)" width="1318"/>
-                <img src="855da95d16199cd37e980b9c30913d48bef264fd74e3f28aea45cf6dfde55362.png" title=" edwin clicks on ingrese contrase&Atilde;&plusmn;a" width="1318"/>
-                <img src="d2b9199995190a2b3414ba5e5d22933220894f8c0ffb05039fc6812a77392d4d.png" title=" edwin clicks on ingrese contrase&Atilde;&plusmn;a (completed)" width="1318"/>
-                <img src="d2b9199995190a2b3414ba5e5d22933220894f8c0ffb05039fc6812a77392d4d.png" title=" edwin clicks on ingrese confirmacion de contrase&Atilde;&plusmn;a" width="1318"/>
-                <img src="3a22fdc3027913ef5fda4a2d1a8ad9d46b71d076161e76e60b595771a9e1c26c.png" title=" edwin clicks on ingrese confirmacion de contrase&Atilde;&plusmn;a (completed)" width="1318"/>
-                <img src="a23e1319d54c72ad5a0b5c100139ebb6bde0fb879a4eb5872333951d47d40ff7.png" title=" Edwin login (completed): <span class='error-color'>ERROR</span>" width="1318"/>
+                <img src="b5164caa34cd0cf1dac27a742e9fa07e8a6f834d142f812fc1a7353de6994e84.png" title=" Given The user enters the page" width="986"/>
+                <img src="b5164caa34cd0cf1dac27a742e9fa07e8a6f834d142f812fc1a7353de6994e84.png" title=" edwin opens the https://www.booking.com/" width="986"/>
+                <img src="b5164caa34cd0cf1dac27a742e9fa07e8a6f834d142f812fc1a7353de6994e84.png" title=" Given The user enters the page (completed)" width="986"/>
+                <img src="b5164caa34cd0cf1dac27a742e9fa07e8a6f834d142f812fc1a7353de6994e84.png" title=" When the user enters to login with &quot;1automation@gmail.com&quot; email and password &quot;Automatizacion123&quot;" width="986"/>
+                <img src="b5164caa34cd0cf1dac27a742e9fa07e8a6f834d142f812fc1a7353de6994e84.png" title=" Edwin login" width="986"/>
+                <img src="30e042146fd10fad7e14a0333510202bedd29f25371dbff9a42498ca26a36a86.png" title=" Edwin anuncio" width="986"/>
+                <img src="30e042146fd10fad7e14a0333510202bedd29f25371dbff9a42498ca26a36a86.png" title=" edwin clicks on ilimina ununcio" width="986"/>
+                <img src="b5164caa34cd0cf1dac27a742e9fa07e8a6f834d142f812fc1a7353de6994e84.png" title=" edwin clicks on ilimina ununcio (completed)" width="986"/>
+                <img src="b5164caa34cd0cf1dac27a742e9fa07e8a6f834d142f812fc1a7353de6994e84.png" title=" Edwin anuncio (completed)" width="986"/>
+                <img src="b5164caa34cd0cf1dac27a742e9fa07e8a6f834d142f812fc1a7353de6994e84.png" title=" edwin clicks on dar click en el boton de logiarse: <span class='failing-color'>FAILURE</span>" width="986"/>
             </div>
         </div>
 

@@ -8,7 +8,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/Features/login.feature",
         glue ="Stepdefinitions",
-        snippets = CucumberOptions.SnippetType.CAMELCASE
+        snippets = CucumberOptions.SnippetType.CAMELCASE,
+
+        tags=""
 
 
 )

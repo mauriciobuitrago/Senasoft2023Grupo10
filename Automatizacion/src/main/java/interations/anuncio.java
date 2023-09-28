@@ -14,13 +14,13 @@ public class anuncio implements Interaction {
     public <T extends Actor> void performAs(T actor) {
 
 
-        if (Visibility.of(Btn_anuncio).viewedBy(actor).asBoolean()) {
+
             OnStage.theActorInTheSpotlight().attemptsTo(
                     Click.on(Btn_anuncio)
 
             );
         }
-    }
+
 
     public static anuncio quit() {
         return Tasks.instrumented(anuncio.class);

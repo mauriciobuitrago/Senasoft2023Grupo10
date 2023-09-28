@@ -1,11 +1,10 @@
 package models;
 
-import net.serenitybdd.screenplay.Performable;
-import net.serenitybdd.screenplay.Tasks;
+import net.serenitybdd.core.steps.Instrumented;
 
 public class usuario {
     private String email;
-    private String  password;
+    private String password;
 
     public usuario(String email, String password) {
         this.email = email;
@@ -27,5 +26,7 @@ public class usuario {
     public void setPassword(String password) {
         this.password = password;
     }
+
+
 }
 

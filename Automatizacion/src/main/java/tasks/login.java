@@ -16,8 +16,7 @@ import static userinterfaces.registerorloginpage.*;
 import static userinterfaces.topbarcomponent.Btn_login;
 
 public class login implements Task {
-    Actions action =new Actions(OnStage.theActorInTheSpotlight().abilityTo(BrowseTheWeb.class).getDriver());
-    WebElement mantener = Btn_confir.resolveFor(OnStage.theActorInTheSpotlight());
+
     private String email;
     private String password;
 
@@ -48,19 +47,6 @@ public class login implements Task {
 
 
         );
-        try {
-            Thread.sleep(1000);
-            action.clickAndHold(mantener).perform();
-            try {
-                Thread.sleep(30000); // Esperamos 30 segundos (30000 milisegundos)
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-
-            action.release().perform();
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
 
 
     }
