@@ -9,7 +9,8 @@ import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
 public class actor {
-    @Managed
+
+    @Managed()
     WebDriver driver;
 
     @Before
@@ -17,7 +18,11 @@ public class actor {
         OnStage.setTheStage(Cast.ofStandardActors());
         OnStage.theActorCalled("edwin");
         OnStage.theActorInTheSpotlight().can(BrowseTheWeb.with(driver));
+
         OnStage.theActorInTheSpotlight().wasAbleTo(Open.url("https://www.booking.com/"));
+
+
+
 
 
 
@@ -25,3 +30,4 @@ public class actor {
 
 
 }
+
